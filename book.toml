@@ -1,0 +1,6 @@
+[book]
+authors = ["Arsh Shaikh"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Kubernotes"
