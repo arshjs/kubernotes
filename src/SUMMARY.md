@@ -1,7 +1,5 @@
 # Summary
 
-[Introduction](./kubernetes.md)
-
 # Kubernetes Resources
 
 - [Pod](./chapters/pod.md)
