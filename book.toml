@@ -9,3 +9,12 @@ title = "Kubernotes"
 additional-css = ["./theme/catppuccin.css"]
 default-theme = "latte"
 preferred-dark-theme = "mocha"
+git-repository-url = "https://github.com/arshjs/kubernotes"
+git-repository-icon = "fa-github"
+
+[output.html.print]
+enable = true
+page-break = true
+
+[output.html.code.hidelines]
+yaml = "~"
