@@ -1,18 +1,22 @@
 # Deployment
 
-> A Deployment is a higher-level abstraction that manages a set of pods and ensures that they are running in a desired state.
+A Deployment is a higher-level abstraction that manages a set of pods and ensures that they are running in a desired state.
 
-Shorthand: `deploy`
+### Creation:
 
-Creation:
+```bash
+kubectl apply -f deployment.yaml
+```
 
-- `kubectl apply -f deployment.yaml`
-- `kubectl create deploy nginx --image=nginx --dry-run=client`
+```bash
+kubectl create deploy nginx --image=nginx --dry-run=client
+```
 
-## Basic Definition
+### Basic Definition
 
 - apiVersion: `apps/v1`
 - kind: `Deployment`
+- Shorthand: `deploy`
 
 ```yaml
 apiVersion: apps/v1

@@ -1,18 +1,22 @@
 # Pod
 
-> A Pod is the smallest and most basic unit of deployment in Kubernetes.
+A Pod is the smallest and most basic unit of deployment in Kubernetes.
 
-Shorthand: `po`
+### Creation:
 
-Creation:
+```bash
+kubectl apply -f pod.yaml`
+```
 
-- `kubectl apply -f pod.yaml`
-- `kubectl create po nginx --image=nginx --dry-run=client`
+```bash
+kubectl create po nginx --image=nginx --dry-run=client`
+```
 
-## Basic Definition
+### Basic Definition
 
 - Api Version: `v1`
 - Kind: `Pod`
+- Shorthand: `po`
 
 ```yaml
 apiVersion: v1
@@ -35,7 +39,7 @@ spec:
           memory: "10Mi" # 20 mebibytes
 ```
 
-## Security Context
+### Security Context
 
 - Used to define security settings for a pod and its containers
 - The security context of the container (`pod.spec.containers.securityContext`) overrides the Pod level security context (`pod.spec.securityContext`)
@@ -69,7 +73,7 @@ spec:
         readOnlyRootFilesystem: true
 ```
 
-## Resource Limits and Requests
+### Resource Limits and Requests
 
 - Resource Requests is the amount of CPU or memory that Kubernetes will reserve for the container
 - Resource Limits is the maximum amount of CPU or memory that the container can use

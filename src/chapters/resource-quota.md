@@ -1,15 +1,18 @@
 # Resource Quota
 
-> A ResourceQuota is a mechanism used to limit the amount of resources (such as CPU, memory, and storage) that can be consumed within a namespace.
+A ResourceQuota is a mechanism used to limit the amount of resources (such as CPU, memory, and storage) that can be consumed within a namespace.
 
-Shorthand: `rq`
+### Creation:
 
-Creation: `kubectl apply -f resource-quota.yaml`
+```bash
+kubectl apply -f resource-quota.yaml
+```
 
-## Basic Definition
+### Basic Definition
 
 - Api Version: `v1`
 - Kind: `ResourceQuota`
+- Shorthand: `rq`
 
 ```yaml
 apiVersion: v1

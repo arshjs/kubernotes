@@ -1,18 +1,22 @@
 # Replica Set
 
-> A ReplicaSet is a controller that ensures a specified number of identical pods are running at any given time.
+A ReplicaSet is a controller that ensures a specified number of identical pods are running at any given time.
 
-Shorthand: `rs`
+### Creation:
 
-Creation:
+```bash
+kubectl apply -f replica-set.yaml
+```
 
-- `kubectl apply -f replica-set.yaml`
-- `kubectl create rs replica-set --image=nginx --replicas=3 --dry-run=client`
+```bash
+kubectl create rs replica-set --image=nginx --replicas=3 --dry-run=client
+```
 
-## Basic Definition
+### Basic Definition
 
 - apiVersion: `apps/v1`
 - kind: `ReplicaSet`
+- Shorthand: `rs`
 
 ```yaml
 apiVersion: apps/v1

@@ -1,24 +1,33 @@
 # Service
 
-> A Kubernetes Service enables communication between different parts of your application and handles the networking aspects for you. It provides stable access to pods, even as they get created, destroyed, or replaced, ensuring high availability.
+A Kubernetes Service enables communication between different parts of your application and handles the networking aspects for you.
 
-Shorthand: `svc`
+It provides stable access to pods, even as they get created, destroyed, or replaced, ensuring high availability.
 
-Creation:
+### Creation:
 
-- `kubectl apply -f service.yaml`
-- `kubectl create svc clusterip back-end --tcp=80:8080 --dry-run=client`
-- `kubectl create svc nodeport my-service --tcp=80:8080 --type=NodePort --node-port=30008 --dry-run=client`
+```bash
+kubectl apply -f service.yaml
+```
 
-## Basic Definition
+```bash
+kubectl create svc clusterip back-end --tcp=80:8080 --dry-run=client
+```
+
+```bash
+kubectl create svc nodeport my-service --tcp=80:8080 --type=NodePort --node-port=30008 --dry-run=client
+```
+
+### Basic Definition
 
 - apiVersion: `apps/v1`
 - kind: `Service`
+- Shorthand: `svc`
 - Default `spec.type` is `ClusterIP`
 
-## Service Types
+### Service Types
 
-### NodePort
+#### NodePort
 
 Used to expose service externally accessed via `<Node-IP>:<Node-Port>`
 
@@ -37,7 +46,7 @@ spec:
     app: my-app
 ```
 
-### ClusterIP
+#### ClusterIP
 
 Used to expose service internally in the cluster at the given port
 
@@ -55,7 +64,7 @@ spec:
     app: back-end
 ```
 
-### Load Balancer
+#### Load Balancer
 
 - Only works with supported cloud platforms, eg. GCP, AWS, AZURE
 - On unsupported platforms works like node-port

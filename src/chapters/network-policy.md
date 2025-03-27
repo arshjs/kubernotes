@@ -1,10 +1,8 @@
 # Network Policy
 
-> A Network Policy is a specification that controls the networking behavior between pods.
+A Network Policy is a specification that controls the networking behavior between pods.
 
-Shorthand: `netpol`
-
-Creation:
+### Creation:
 
 ```bash
 kubectl apply -f network-policy.yaml
@@ -20,10 +18,11 @@ kubectl create netpol allow-ingress-egress --dry-run=client \
     --ports 53
 ```
 
-## Basic Definition
+### Basic Definition
 
 - Api Version: `networking.k8s.io/v1`
 - Kind: `NetworkPolicy`
+- Shorthand: `netpol`
 - Network policies are namespaced and need plugin like Calico, Cilium, Weave, etc. to work
 
 ```yaml
