@@ -14,7 +14,7 @@ kubectl create rs replica-set --image=nginx --replicas=3 --dry-run=client
 
 ### Basic Definition
 
-- apiVersion: `apps/v1`
+- Api Version: `apps/v1`
 - kind: `ReplicaSet`
 - Shorthand: `rs`
 

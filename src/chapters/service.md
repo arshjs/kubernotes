@@ -20,7 +20,7 @@ kubectl create svc nodeport my-service --tcp=80:8080 --type=NodePort --node-port
 
 ### Basic Definition
 
-- apiVersion: `apps/v1`
+- Api Version: `apps/v1`
 - kind: `Service`
 - Shorthand: `svc`
 - Default `spec.type` is `ClusterIP`
