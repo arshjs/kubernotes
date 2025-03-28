@@ -11,7 +11,7 @@ default-theme = "latte"
 preferred-dark-theme = "mocha"
 git-repository-url = "https://github.com/arshjs/kubernotes"
 git-repository-icon = "fa-github"
-site-url = "kubernotes/"
+site-url = "/kubernotes/"
 
 [output.html.print]
 enable = true
