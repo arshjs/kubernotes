@@ -1,6 +1,6 @@
 # Replica Set
 
-A ReplicaSet is a controller that ensures a specified number of identical pods are running at any given time.
+A _**ReplicaSet**_ is a controller that ensures a specified number of identical pods are running at any given time.
 
 ### Creation:
 

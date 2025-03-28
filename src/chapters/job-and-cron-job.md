@@ -2,7 +2,7 @@
 
 ## Job
 
-A Job is a resource that creates one or more pods to execute a specific task or batch process to completion.
+A _**Job**_ is a resource that creates one or more pods to execute a specific task or batch process to completion.
 
 Unlike long-running services, Jobs are meant to complete and terminate.
 
@@ -45,7 +45,7 @@ spec:
 
 ## CronJobs
 
-CronJobs are an extension of regular Jobs that add time-based scheduling.
+_**CronJobs**_ are an extension of regular Jobs that add time-based scheduling.
 
 They create Jobs on a repeating schedule, similar to Unix crontab.
 

@@ -1,6 +1,6 @@
 # Deployment
 
-A Deployment is a higher-level abstraction that manages a set of pods and ensures that they are running in a desired state.
+A _**Deployment**_ is a higher-level abstraction that manages a set of pods and ensures that they are running in a desired state.
 
 ### Creation:
 

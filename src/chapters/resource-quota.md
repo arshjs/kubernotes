@@ -1,6 +1,6 @@
 # Resource Quota
 
-A ResourceQuota is a mechanism used to limit the amount of resources (such as CPU, memory, and storage) that can be consumed within a namespace.
+A _**ResourceQuota**_ is a mechanism used to limit the amount of resources (such as CPU, memory, and storage) that can be consumed within a namespace.
 
 ### Creation:
 

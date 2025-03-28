@@ -1,6 +1,6 @@
 # Network Policy
 
-A Network Policy is a specification that controls the networking behavior between pods.
+A _**NetworkPolicy**_ is a specification that controls the networking behavior between pods.
 
 ### Creation:
 

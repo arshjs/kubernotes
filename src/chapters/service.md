@@ -1,6 +1,6 @@
 # Service
 
-A Kubernetes Service enables communication between different parts of your application and handles the networking aspects for you.
+A _**Service**_ enables communication between different parts of your application and handles the networking aspects for you.
 
 It provides stable access to pods, even as they get created, destroyed, or replaced, ensuring high availability.
 

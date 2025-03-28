@@ -1,15 +1,15 @@
 # Pod
 
-A Pod is the smallest and most basic unit of deployment in Kubernetes.
+A _**Pod**_ is the smallest and most basic unit of deployment in Kubernetes.
 
 ### Creation:
 
 ```bash
-kubectl apply -f pod.yaml`
+kubectl apply -f pod.yaml
 ```
 
 ```bash
-kubectl create po nginx --image=nginx --dry-run=client`
+kubectl create po nginx --image=nginx --dry-run=client
 ```
 
 ### Basic Definition
