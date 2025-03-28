@@ -10,7 +10,7 @@
 - [Network Policy](./chapters/network-policy.md)
 - [Job & Cron job](./chapters/job-and-cron-job.md)
 - [Secret & Config Map](./chapters/secret-and-config-map.md)
-- [Persistent Volume & Claim](./chapters/persistent-volume-and-claim.md)
+<!-- - [Persistent Volume & Claim](./chapters/persistent-volume-and-claim.md) -->
 
 ---
 
